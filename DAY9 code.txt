@@ -1,0 +1,25 @@
+const arrInp = [1, 18, -12, 3, 4, 5];
+console.log(arrInp);
+
+// Map
+// arrOp => [1, 4, 9, 16, 25]
+const arrOp1 = arrInp.map(ele => ele*ele);
+console.log(arrOp1);
+
+// Filter
+// arrOp => [2, 4]
+const arrOp2 = arrInp.filter(ele => ele % 2 == 0);
+console.log(arrOp2);
+
+// Reduce
+// arrOp = 15
+const arrOp3 = arrInp.reduce((sum, ele) => sum + ele);
+console.log(arrOp3);
+
+const arrOp4 = arrInp.reduce((max, ele) => {
+    if (ele > max) {
+        max = ele;
+    }
+    return max;
+})
+console.log(arrOp4);
