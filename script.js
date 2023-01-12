@@ -1,46 +1,28 @@
+// let sec=document.getElementById('sec')
+// var seconds=0;
+// let  time =document.getElementById('time')
+
+// let start=()=>{
+//  interval=setInterval(()=>{
+//   seconds++;
+//   sec.innerText=`${seconds}seconds`;
+// },1000)
+// }
+// setInterval(()=>{
+//   time.innerText=new Date()
+// },1000)
+ 
+// let end=()=>{
+//   console.log('end varuthu')
+//   clearInterval (interval)
+//   sec.innerText=0
+
+// }
 
 
-class bank {
-    constructor(balance) {
-        this.balance = balance
-    }
-    deposit(amount) {
-        this.balance += amount
-        console.log('Amount Deposited Successfully!')
-        console.log({ balance: `₹${this.balance}` })
+ set=()=>sessionStorage.setItem('EnnaSearchPannan','NeeNinaikiraMathiriEdumIlla')
 
-    }
-    withdrawl(amount) {
+ get=()=>{ data=sessionStorage.getItem('EnnaSearchPannan')
+console.log(data)}
+ remove=()=>sessionStorage.removeItem('EnnaSearchPannan')
 
-        if (this.balance > amount) {
-            this.balance -= amount
-            console.log('Amount withdrawn Successfully!')
-            console.log({ balance: `₹${this.balance}` })
-        }
-        else {
-            alert('Insufficient Funds!')
-        }
-    }
-}
-let aathi = new bank(5000)
-// aathi.withdrawl(3000)
-
-// aathi.deposit(3000)
-let greet = document.querySelector('.greet')
-let balance = document.querySelector('.balance')
-let depositinput = document.querySelector('.depositinput')
-let withdrawlinput = document.querySelector('.withdrawlinput')
-let depositbtn = document.querySelector('.depositbtn')
-let withdrawlbtn = document.querySelector('.withdrawlbtn')
-
-withdrawlbtn.onclick = () => {
-    aathi.withdrawl(Number(withdrawlinput.value))
-    withdrawlinput.value = ""
-    balance.innerText = `Your Account Balance ₹${aathi.balance}  `
-}
-depositbtn.onclick = () => {
-    aathi.deposit(Number(depositinput.value))
-    depositinput.value = ""
-    balance.innerText = `Your Account Balance ₹${aathi.balance} 
-                              `}
-// console.log(aathi.balance)
