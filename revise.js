@@ -122,10 +122,87 @@
 // console.log(array.toString(4,7))
 
 
-// OBJECT
+// // OBJECT
+// let obj = {
+//     name : 'AATHI',
+//     age : 23,
+//     contact : 9361446340
+
+// }
+// Object.entries(obj).forEach( (a)=> console.log(a))
+// Object.keys(obj).forEach( (a)=>console.log(a))
+// Object.values(obj).forEach( (a)=> console.log(a))
+
+// var let const
+
+// var a= 5 ;
+// let a=5;
+// const a = 5;
+// cheking scopes
+// let print =  () =>{
+//      if(true)
+//      {var a = 4}
+//      console.log(a)
+// }
+// print()
+
+// Spread and rest operator
+
+// spread operator primary goal is to avoid 
+// copy by referance it copies value only 
+// we can use it to concat different objects and arrays
 
 
-// 
+// let a=[1,2,3,4]
+// let b = [5,6,7]
+// let c = [...a,...b]
+// console.log(c)
+ // same for objects
+
+ //Rest Parameter ( we use ... for parameter
+//  wch we don't know how many parameters are getting inside)
+
+//  let mutiply = (...num)=>{ 
+//     console.log(num.reduce( (sum , n)=> sum+=n))
+
+//  }
+//  mutiply(10,20)
+
+// Object destructuring
+
+// desturctuing is basically detructing an array 
+// object using an [variable name], {variable name} 
+
+
+//   let x= {name : 'aathi', age: 22}
+
+// let { name, age } = x ;
+ 
+// console.log(name, age)
+
+// const arr = [
+//     {name :'aathi', age:23 },
+//     {name :'rajan', age:20 },
+//     {name :'haris', age:25 }
+
+// ]
+// console.log(arr.map( ({a})=>age))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
